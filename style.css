@@ -1,0 +1,16 @@
+#root {
+  --colorWhite: #cfccfc;
+  --colorGray: #565656;
+  --colorBlack: #010201;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+#counter {
+  background-color: var(--colorWhite);
+  color: var(--colorBlack);
+}
