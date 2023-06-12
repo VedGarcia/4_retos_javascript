@@ -1,16 +1,61 @@
-#root {
+:root {
   --colorWhite: #cfccfc;
   --colorGray: #565656;
   --colorBlack: #010201;
+  --colorBlueSpace: #000431;
 }
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
-  box-sizing: content-box;
 }
-
+body{
+  background-image: linear-gradient(90deg, var(--colorBlack), var(--colorBlueSpace)) ;
+  padding: 2%;
+}
+/* Inicio de Counter */
 #counter {
-  background-color: var(--colorWhite);
+  width: 40%;
+  height: auto;
+  padding: 5%;
+  border-radius: 20px;
+  background-color: var(--colorBlueSpace);
   color: var(--colorBlack);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.title{
+  color: var(--colorWhite);
+  text-shadow: 0 0 10px var(--colorWhite);
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 200;
+  margin: 1%;
+}
+.counter{
+  color: var(--colorBlack);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-shadow: 0 0 5px var(--colorWhite);
+  margin: 1%;
+  font-size: 42px;
+}
+.buttonContain{
+  width: 100%;
+}
+.button{
+  width: 30%;
+  border: solid 1px var(--colorWhite);
+  border-radius: 15px;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  color: var(--colorWhite);
+  margin: 1%;
+}
+.button:hover{
+  box-shadow: 0 0 5px var(--colorWhite);
+  text-shadow: 0 0 10px var(--colorGray);
+}
+/* Final de Counter */
